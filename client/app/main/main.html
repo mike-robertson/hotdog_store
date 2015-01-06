@@ -1,0 +1,24 @@
+<div ng-include="'components/navbar/navbar.html'"></div>
+
+  <carousel interval="ctrl.slideInterval" id="franks-carousel">
+    <slide ng-repeat="slide in ctrl.slides" active="slide.active">
+      <img class="slide-image" ng-src="assets/images/{{slide.image}}"></img>
+      <div class="container slide-text">{{slide.text}}</div>
+    </slide>
+  </carousel>
+<div class="container">
+  <div class="col-md-4 col-xs-12 info-container-margin" ng-repeat="cntr in ctrl.containers">
+    <div class="info-container col-xs-12">
+      <img class="icon" ng-src="assets/images/{{cntr.icon}}"></img>
+      <header class="container-header">{{cntr.title}}</header>
+      <div class="container-text" ng-bind-html="cntr.text | unsafe"></div>
+      <div ng-if="cntr.text2" class="container-text">{{cntr.text2}}</div>
+      <div ng-if="cntr.link" class="container-link" href=""><a href="">
+        {{cntr.linkText}} <img src="assets/images/carat.png"></img></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+</footer>

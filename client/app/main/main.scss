@@ -1,0 +1,111 @@
+//TODO: add the media queries so the carousel isn't all buggered up for small screens
+//Add the link to the one item in the containers which has a link
+
+.navbar-default {
+    background-color: white;
+    border-color: white;
+    margin-bottom: 0px;
+}
+
+.navbar-brand {
+    padding: 2px 2px;
+}
+
+.navbar-brand > img {
+    max-height: 100%;
+}
+
+.navbar-nav {
+    float: right;
+}
+
+.container {
+    font-weight: bold;
+}
+
+#franks-carousel {
+    padding: 0px 0px 50px 0px;
+}
+
+.slide-image {
+    width: 100%;
+}
+
+.carousel-inner {
+    vertical-align: middle;
+}
+
+.carousel-control {
+    visibility: hidden;
+}
+
+.carousel-indicators li{
+    background-color: #D5D5D5;
+    border-color: #777;
+}
+
+.carousel-indicators .active {
+
+    background-color: #D46A54;
+}
+
+
+.slide-text{
+    text-align: center;
+    font-size: 30px;
+    padding: 20px 0px;
+}
+
+.info-container {
+    display: inline-block;
+    border: 2px solid;
+    border-color: #DCDD15;
+    border-radius: 2px;
+    height: 325px;
+    text-align: center;
+    padding: 0px;
+}
+
+.info-container-margin {
+    padding: 20px 10px;
+}
+
+.icon {
+    margin: 10px;
+}
+
+.container-header {
+    font-size: 20px;
+    margin: 20px;
+}
+
+.container-text {
+    padding: 10px;
+}
+
+.container-link {
+    position: relative;
+    top: 7px;
+    background-color: #DCDD15;
+    font-size: 25px;
+    font-weight: normal;
+    padding:10px;
+}
+
+.container-link > a {
+    color: #333;
+    text-decoration: none;
+}
+
+.container-link > a > img {
+    float: right;
+    position: relative;
+    top: 2px;
+}
+
+.footer {
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 70px;
+    border-top: 1px solid #E5E5E5;
+}
